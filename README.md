@@ -12,7 +12,7 @@ Como parte del quinto ejercicio que se nos asignó utilizando el motor de videoj
   	
 Pasos para llegar a la creación final de estas acciones:
 
-3.	Se creó una matriz de acciones
+2.	Se creó una matriz de acciones
 
     Action: Horizontal Movement	
   
@@ -38,7 +38,7 @@ Pasos para llegar a la creación final de estas acciones:
   	
           Mapping: Y key 
 
-5.	En este paso se crearon dos acciones adicionales a las que estaban implementadas ya en el script shootermovinput y aquí les dejamos los pasos para crear las mismas:
+3.	En este paso se crearon dos acciones adicionales a las que estaban implementadas ya en el script shootermovinput y aquí les dejamos los pasos para crear las mismas:
 
 OnFastMovement (Acción de movimiento rápido):
 
@@ -71,4 +71,9 @@ private int jumpsMade: El número de saltos realizados.
 
 -	Restablecimiento de saltos en el suelo: Cuando el personaje toca el suelo (detectado mediante la función "OnCollisionEnter"), se restablece el estado de salto, permitiendo al jugador realizar saltos nuevamente.
 
-4. 
+
+
+4. Correr el programa y mostrar los resultados
+
+ ![GIF 10-17-2023 8-23-37 AM](https://github.com/krivera65/Excercise-05/assets/143332773/918b631b-9aef-4893-ae83-639d7517c3c2)
+
