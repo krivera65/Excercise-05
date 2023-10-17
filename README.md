@@ -6,7 +6,7 @@ Como parte del quinto ejercicio que se nos asignó utilizando el motor de videoj
 
   	Camila:
 
-  	Raúl:
+  	Raúl: Eye of the Tiger - Survivor
 
   	Karla: Bliding Lights - The Weeknd
   	
