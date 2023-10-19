@@ -4,7 +4,7 @@ Como parte del quinto ejercicio que se nos asignó utilizando el motor de videoj
 
 1.	Música añadida al file de Spotify:
 
-  	Camila:
+  	Camila:Srcrets - OneRepublic (Lo estuvo añadiendo Karla, debido a que a Camila le aparecía como si el link estuviera vencido)
 
   	Raúl: Eye of the Tiger - Survivor
 
@@ -76,4 +76,38 @@ private int jumpsMade: El número de saltos realizados.
 4. Correr el programa y mostrar los resultados
 
  ![GIF 10-17-2023 8-23-37 AM](https://github.com/krivera65/Excercise-05/assets/143332773/918b631b-9aef-4893-ae83-639d7517c3c2)
+
+5. En este paso se crearon las acciones jump y fastmovement en el visual script:
+
+   Para crear una acción de salto (jump) en Unity Visual Script, sigue estos pasos:
+
+    - Abre el Visual Script en Unity.
+      
+    - En el grafo de Visual Script, comienza arrastrando el evento del botón "Jump" desde el Input System al grafo para detectar cuándo se presiona el botón de salto.
+
+    - Agrega un nodo condicional después del evento "Jump". Esto se utiliza para verificar si el personaje está en el suelo antes de permitir un salto normal.
+    
+    - Conecta el resultado verdadero del nodo condicional a un nodo "Rigidbody - Add Force".
+      
+    - Configura la dirección de la fuerza en "Add Force" para que sea hacia arriba, lo que normalmente se logra estableciendo el valor en el eje Y en un número positivo. Este          valor representa la fuerza del salto (10).
+
+    - Conecta el resultado falso del nodo condicional a un nodo adicional condicional para verificar si el personaje puede realizar un doble salto. Este segundo nodo                  condicional debe comprobar si canDoubleJump es verdadero.
+
+    - Si canDoubleJump es verdadero (lo que significa que el personaje tiene la capacidad de realizar un doble salto), conecta el resultado verdadero del segundo nodo                  condicional a otro nodo "Rigidbody - Add Force".
+
+   Para modificar la velocidad (speed) en una acción de "Move" utilizando un nodo condicional en un Visual Script:
+
+    - Agrega un nodo condicional antes de la acción de "Move" para determinar cuándo aumentar la velocidad.
+        
+    - Conecta la entrada del nodo condicional a la condición que determinará cuándo aumentar la velocidad. Esto podría ser un evento, una entrada de jugador, o cualquier              condición específica que desees.
+      
+    - Conecta la salida verdadera (true) del nodo condicional a un nodo de adició. Este nodo de adición se utilizará para aumentar la velocidad si se cumple la condición.
+
+    - Define la cantidad de velocidad adicional que deseas añadir en la entrada "B" del nodo de adición. Ingresa un valor numérico en "B" para especificar cuánta velocidad se         debe agregar.
+        
+    - Conecta la salida del nodo de adición de nuevo a la entrada de "Move." Esto asegurará que la velocidad aumentada se aplique a la acción de "Move."
+        
+    - Asegúrate de que la salida falsa (false) del nodo condicional esté conectada directamente a la entrada de "Move" si la condición no se cumple. Esto significa que si la          condición no se cumple, la velocidad permanecerá sin cambios.
+
+    
 
